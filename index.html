@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+    <h1>Loulou's Project</h1>
+    <h2>Pokedex</h2>
+    <div class="container">
+        <p>Search for Pokémon Name or ID:</p>   
+        <div class="input-area">
+            <input type="text" id="search-input" placeholder="try and search pikachu" required/>
+            <button id="search-button">Search</button>
+        </div>
+
+
+
+        <div class="poke-container" id="poke-container">
+
+            <div style="display: flex;">
+            <p id="pokemon-name"></p>
+            <p style="font-size: 16px;" id="pokemon-id"></p>
+            </div>
+
+            <div style="font-size: 12px; display: flex;">
+            <p id="weight"></p><p id="height"></p>
+            </div>
+
+            <div id="sprite-container"></div>
+            <p style="font-size: 18px;" id="types"></p>
+
+        </div>
+
+
+
+        <div class="stat-container">
+            <div class="header">Base</div>
+            <div class="header">Stats</div>
+            
+            <div class="stat-name">HP:</div>
+            <div class="stat-value" id="hp"></div>
+            
+            <div class="stat-name">Attack:</div>
+            <div class="stat-value" id="attack"></div>
+            
+            <div class="stat-name">Defense:</div>
+            <div class="stat-value" id="defense"></div>
+            
+            <div class="stat-name">Sp. Attack:</div>
+            <div class="stat-value" id="special-attack"></div>
+            
+            <div class="stat-name">Sp. Defense:</div>
+            <div class="stat-value" id="special-defense"></div>
+            
+            <div class="stat-name">Speed:</div>
+            <div class="stat-value" id="speed"></div>
+        </div>     
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
